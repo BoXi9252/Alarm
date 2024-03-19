@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock with Alarm</title>
+    <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div id="time" class="time"></div>
+            <div id="alarmIndicator" class="alarm-indicator"></div>
+            <form id="alarmForm">
+                <label for="hours"></label>
+                <input type="text" id="hours" min="0" max="23" placeholder="HH">
+                <label for="minutes"></label>
+                <input type="text" id="minutes" min="0" max="59" placeholder="MM">
+                <button type="submit">Set Alarm</button>
+            </form>
+        </div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+    <audio id="alarmSound" src="./assets/audio/game-fx-8.wav"></audio>
+    <script src="./assets/script/index.js"></script>
+</body>
+
+</html>
